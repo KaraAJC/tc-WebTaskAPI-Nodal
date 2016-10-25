@@ -17,6 +17,9 @@ const Nodal = require('nodal');
   const Photo = Nodal.require('app/models/photo.js');
 
   PageStat.joinsTo(Car);
-  Photo.joinsTo(Car, {multiple: true});
+  Photo.joinsTo(Car);
+
+  Car.joinedBy(PageStat);
+  Car.joinedBy(Photo, {multiple: true});
 
 module.exports = {}; // Don't need to export anything
