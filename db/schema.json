@@ -1,5 +1,60 @@
 {
 
-  "migration_id": null
+  "migration_id": 2016102500120105,
+
+  "models": {
+
+    "Car": {
+
+      "table": "cars",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "make", "type": "string", "properties": {}},
+        {"name": "model", "type": "string", "properties": {}},
+        {"name": "year", "type": "int", "properties": {}},
+        {"name": "price_range", "type": "string", "properties": {}},
+        {"name": "mileage", "type": "int", "properties": {}},
+        {"name": "cylinders", "type": "string", "properties": {}},
+        {"name": "city_MPG", "type": "int", "properties": {}},
+        {"name": "highway_MPG", "type": "int", "properties": {}},
+        {"name": "engine", "type": "int", "properties": {}},
+        {"name": "vin", "type": "string", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    },
+
+    "PageStat": {
+
+      "table": "page_stats",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "views", "type": "integer", "properties": {}},
+        {"name": "saves", "type": "integer", "properties": {}},
+        {"name": "shares", "type": "integer", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    },
+
+    "Photo": {
+
+      "table": "photos",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "filename", "type": "string", "properties": {}},
+        {"name": "description", "type": "string", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    }
+
+  }
 
 }

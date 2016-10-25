@@ -12,7 +12,9 @@ class CreatePhotos extends Nodal.Migration {
   up() {
 
     return [
-      this.createTable("photos", [])
+      this.createTable("photos", [
+        {"name":"filename","type":"string"},
+        {"name":"description","type":"string"}])
     ];
 
   }
