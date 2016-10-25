@@ -49,6 +49,7 @@
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
         {"name": "filename", "type": "string", "properties": {}},
         {"name": "description", "type": "string", "properties": {}},
+        {"name": "carId", "type": "int", "properties": {}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}
       ]

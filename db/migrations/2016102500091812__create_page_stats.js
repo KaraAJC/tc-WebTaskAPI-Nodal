@@ -13,9 +13,11 @@ class CreatePageStats extends Nodal.Migration {
 
     return [
       this.createTable("page_stats", [
-        {"name":"views","type":"integer"},
-        {"name":"saves","type":"integer"},
-        {"name":"shares","type":"integer"}])
+        {"name":"views","type":"int"},
+        {"name":"saves","type":"int"},
+        {"name":"shares","type":"int"},
+        {"name":"carId","type":"int"}
+        ])
     ];
 
   }
