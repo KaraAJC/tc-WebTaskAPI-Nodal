@@ -29,6 +29,7 @@ const IndexController = Nodal.require('app/controllers/index_controller.js');
 
 /* generator: begin imports */
 
+const V1CarsController = Nodal.require('app/controllers/v1/cars_controller.js');
 
 /* generator: end imports */
 
@@ -36,6 +37,7 @@ router.route('/').use(IndexController);
 
 /* generator: begin routes */
 
+router.route('/v1/cars/{id}').use(V1CarsController);
 
 /* generator: end routes */
 
