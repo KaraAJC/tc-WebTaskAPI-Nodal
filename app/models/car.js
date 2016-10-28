@@ -1,7 +1,6 @@
 'use strict';
 
 const Nodal = require('nodal');
-const
 
 class Car extends Nodal.Model {}
 
